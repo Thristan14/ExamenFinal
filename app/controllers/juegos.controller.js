@@ -138,8 +138,8 @@ exports.updateById = async (req, res) => {
                 plataforma: req.body.plataforma,
                 fecha_lanzamiento: req.body.fecha_lanzamiento,
                 precio_alquiler: req.body.precio_alquiler,
-                fecha_devolucion: req.body.fecha_devolucion, // Adjusted to match model field name
-                nombre_cliente: req.body.nombre_cliente, // Adjusted to match model field name
+                fecha_devolucion: req.body.fecha_devolucion,
+                nombre_cliente: req.body.nombre_cliente, 
                 comentario: req.body.comentario
             };
             let result = await Juego.update(updatedObject, { returning: true, where: { id_juego: juegoId } });
