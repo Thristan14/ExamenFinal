@@ -15,7 +15,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 	  },
 	  fecha_lanzamiento: {
-			type: Sequelize.STRING
+			type: Sequelize.INTEGER
     },
     precio_alquiler: {
       type: Sequelize.STRING
@@ -25,7 +25,7 @@ module.exports = (sequelize, Sequelize) => {
 
     },
     nombre_Cliente: {   
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
   
     },
       comentario: {
